@@ -10,7 +10,7 @@ def index(request):
     else:
         city = 'Amsterdam'
 
-    appid = '9aa9620e9a0ded2f3adbc1a8f053a855'
+    appid = '' ## put here you API key 
     url = 'https://api.openweathermap.org/data/2.5/weather'
     params = {'q': city, 'appid' : appid, 'units':'metric'}
     r = requests.get(url, params=params)
